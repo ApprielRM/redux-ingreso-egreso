@@ -35,7 +35,6 @@ export class LoginComponent implements OnInit {
     this.uiSubscription = this.store.select('ui')
       .subscribe( ui => {
         this.loading = ui.isLoading;
-        console.log('Cargando subs');
       })
 
   }
